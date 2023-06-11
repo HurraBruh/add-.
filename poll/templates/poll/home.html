@@ -1,0 +1,105 @@
+{% extends "poll/base.html" %}
+
+{% block title %}Электроный больничный{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col col-lg-15">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Оформление больничного</h2>
+            </div class="form-group row">
+                <div class="col-xs-4">
+                    <br/>
+                <form method="POST" action="">
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <label class="form-label">ФИО:</label> 
+                        <input 
+                            type="fio" 
+                            name="fio"
+                            class="form-control  form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Дата рождения:</label> 
+                        <input 
+                            type="birth_date" 
+                            name="birth_date"
+                            class="form-control" 
+                        />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Период больничного с:</label> 
+                        <input 
+                            type="since_list" 
+                            name="since_list"
+                            class="form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Период больничного до:</label> 
+                        <input 
+                            type="till_list" 
+                            name="till_list"
+                            class="form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Желаемый диагноз:</label> 
+                        <input 
+                            type="diagnos" 
+                            name="diagnos"
+                            class="form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">СНИЛС:</label> 
+                        <input 
+                            type="snils" 
+                            name="snils"
+                            class="form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Место работы/учёбы:</label> 
+                        <input 
+                            type="job" 
+                            name="job"
+                            class="form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Город:</label> 
+                        <input 
+                            type="city" 
+                            name="city"
+                            class="form-control" 
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Ваш Telegram:</label> 
+                        <input 
+                            type="telegram" 
+                            name="telegram"
+                            class="form-control" 
+                        />
+                    </div>
+
+                <button type="submit" class="btn btn-info">Заказать</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+.h1, .h2, .h3 {
+    font-famaly: 'Raleway', sans-serif !important;
+}
+
+.body {
+    font-famaly: 'Raleway', sans-serif !important;
+}
+
+.navbar-default, .btn, .form-control, .panel {
+	border-radius: 0;
+}
+.navbar-default {
+    background-color: rgba(187, 230, 240, .7);
+    border-color: rgba(245, 245, 220, .6);
+    box-shadow: 0px 3px 3px 0px #ddd;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(3, 144, 252, .9);
+    border-bottom: 4px solid #ddd;
+}
+
+.form-control {
+    background-color: #ebf5fc;
+    border: none;
+    color: black;
+    padding: 17px 8px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: rgba(187, 230, 240, .7);
+    border-color: rgba(245, 245, 220, .6);
+    border-top-left-radius: 2;
+	border-top-right-radius: 2; 
+}
+.panel-footer {
+	background-color: rgba(187, 230, 240, .7);
+    border-color: rgba(187, 230, 240, .7);
+}
+.panel {
+	box-shadow: 0px 3px 3px 0px #ddd;
+}
+a.navbar-brand, .panel-title {
+    font-famaly: 'Raleway', sans-serif !important;
+}
